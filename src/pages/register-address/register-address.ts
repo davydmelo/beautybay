@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { RegisterPaymentPage } from '../register-payment/register-payment';
 
-/**
- * Generated class for the RegisterAddressPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
 @IonicPage()
 @Component({
   selector: 'page-register-address',
@@ -14,11 +9,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RegisterAddressPage {
 
+  registerPaymentPage: any = RegisterPaymentPage;	
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad RegisterAddressPage');
+  onBack()
+  {
+	this.navCtrl.pop();
+  }
+  
+  onNext()
+  {
+	this.navCtrl.push(this.registerPaymentPage);
   }
 
 }

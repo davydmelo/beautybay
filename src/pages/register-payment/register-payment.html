@@ -1,18 +1,67 @@
-<!--
-  Generated template for the RegisterPaymentPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>register-payment</ion-title>
+  <ion-navbar color="app">
+    <ion-title>Meio de Pagamento</ion-title>
   </ion-navbar>
-
 </ion-header>
-
 
 <ion-content padding>
 
+<ion-grid>
+
+<ion-row style="margin-left:5px;">
+	<ion-label stacked>Nome no cartão</ion-label>
+</ion-row>
+
+<ion-row>
+	<ion-col>    
+    <ion-input type="text"></ion-input>
+	</ion-col>
+</ion-row>
+
+<ion-row style="margin-left:5px;">
+	<ion-label stacked>Número do Cartão</ion-label>	
+</ion-row>
+<ion-row>	
+	<ion-col><ion-input type="text" placeholder="AAAA"></ion-input></ion-col>
+	<ion-col><ion-input type="text" placeholder="AAAA"></ion-input></ion-col>
+	<ion-col><ion-input type="text" placeholder="AAAA"></ion-input></ion-col>
+	<ion-col><ion-input type="text" placeholder="AAAA"></ion-input></ion-col>	
+</ion-row>
+ 
+<ion-row style="margin-left:5px;">
+	<ion-label stacked>Mês/Ano</ion-label>
+</ion-row>
+
+<ion-row>
+	<ion-col>
+    <ion-input type="text"></ion-input>
+	</ion-col>
+	<ion-col>
+	<ion-input type="text"></ion-input>
+	</ion-col>
+</ion-row>
+
+<ion-row style="margin-left:5px;">
+	<ion-label stacked>Código de Verificação</ion-label>
+</ion-row>
+
+<ion-row>
+	<ion-col>    
+    <ion-input type="text"></ion-input>
+	</ion-col>
+</ion-row>
+</ion-grid>
+
+<div padding>
+  <button ion-button block outline color="app" (click)="onBack()">BACK</button>
+  <button ion-button block color="app" (click)="onNext()">CONFIRM</button>
+</div>
+
+<!-- TODO: Transformar em componente -->
+<div style="display: table; margin: 0 auto;">
+	<div class="circle"></div>
+	<div class="circle"></div>	
+	<div class="circle-selected"></div>	
+</div>
+  
 </ion-content>

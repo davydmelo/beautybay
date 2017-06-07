@@ -1,18 +1,56 @@
-<!--
-  Generated template for the RegisterAddressPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>register-address</ion-title>
+  <ion-navbar color="app">
+    <ion-title>Dados de Localização</ion-title>
   </ion-navbar>
-
 </ion-header>
-
 
 <ion-content padding>
 
+<ion-list>
+  <p text-center>Insira os dados de localização de onde o serviço será prestado</p>
+  
+<ion-item>
+    <ion-label>Postal Code</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Address</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Number</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>City</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Neighborhood</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>State</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<div padding>
+  <button ion-button block outline color="app" (click)="onBack()">BACK</button>
+  <button ion-button block color="app" (click)="onNext()">NEXT</button>
+</div>
+
+<!-- TODO: Transformar em componente -->
+<div style="display: table; margin: 0 auto;">
+	<div class="circle"></div>
+	<div class="circle-selected"></div>	
+	<div class="circle"></div>	
+</div>
+  
 </ion-content>
